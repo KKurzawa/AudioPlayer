@@ -24,14 +24,14 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
     const canvasRef = useRef();
 
     function handleLoadStart(e) {
-        // const src = e.nativeEvent.srcElement.src;
-        // const audio = new Audio(src);
-        // audio.onloadedmetadata = function () {
-        //     if (audio.readyState > 0) {
-        //         setDuration(audio.duration)
-        //     }
-        // }
-        setDuration(audioRef.current.duration)
+        const src = e.nativeEvent.srcElement.src;
+        const audio = new Audio(src);
+        audio.onloadedmetadata = function () {
+            if (audio.readyState > 0) {
+                setDuration(audio.duration)
+            }
+        }
+        // setDuration(audioRef.current.duration)
         if (play) { audioRef.current.play() }
     }
 
