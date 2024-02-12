@@ -55,15 +55,16 @@ bottom: 0;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #99999987;
 }
 
 .list ul li:hover{
     background: hsla(38, 66%, 39%, 0.507);
+    color: #080710;
 }
 
 .list ul li .row p{
-    color: #999;
+    color: #080710;
     font-size: 0.85rem;
 }
 
@@ -72,5 +73,5 @@ bottom: 0;
 }
 
 .list .playing{
-    background-color: hsla(354, 76%, 34%, 0.945);
+    background-color: hsla(354, 76%, 34%, 0.902);
 }

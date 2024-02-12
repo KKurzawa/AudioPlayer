@@ -40,13 +40,13 @@ ul {
 }
 
 .shape-1{
-  background: radial-gradient(circle at 35px 65px, #a57522, #111);
+  background: radial-gradient(circle at 35px 65px, #971522, #111);
   left: -65px;
   top: -65px;
 }
 
 .shape-2{
-  background: radial-gradient(circle at 45px 90px, #971522, #111);
+  background: radial-gradient(circle at 45px 90px, #a57522, #111);
   right: -65px;
   bottom:-65px;
 }
@@ -82,7 +82,7 @@ input[type="range"]::-webkit-slider-thumb{
   -webkit-appearence: none;
   -moz-appearance: none;
   appearance: none;
-  background: hsla(0, 0%, 20%, 0.568);
+  background: #a57522;
   border-radius: 50px;
   cursor: grab;
   width: 10px;

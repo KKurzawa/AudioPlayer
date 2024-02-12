@@ -1,4 +1,4 @@
-import { MdExpandMore } from "react-icons/md";
+// import { MdExpandMore } from "react-icons/md";
 import './card.css';
 import Musics from '../assets/data/index.jsx';
 import { MdOutlineQueueMusic } from "react-icons/md";
@@ -116,7 +116,8 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
     return (
         <div className="card">
             <div className="nav">
-                <i className="react-icons"><MdExpandMore /></i>
+                <i id='mobileRepeat' className="material-symbols-outlined" onClick={handleRepeat}>{repeat}</i>
+                {/* <i className="react-icons"><MdExpandMore /></i> */}
                 <span>Now Playing {musicNumber + 1}/{Musics.length}</span>
                 <i className="react-icons" onClick={() => setOpen(prev => !prev)}><MdOutlineQueueMusic /></i>
             </div>
@@ -140,7 +141,7 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
             </div>
             <div className="controls">
 
-                <i className="material-symbols-outlined" onClick={handleRepeat}>{repeat}</i>
+                <i id='repeat' className="material-symbols-outlined" onClick={handleRepeat}>{repeat}</i>
                 <i className="react-icons" id='prev' onClick={() => handleNextPrev(-1)}><IoPlaySkipBackSharp /></i>
                 <div className="play" onClick={handlePlayingAudio}>
                     <i className="react-icons">{play ? <FaPause /> : <FaPlay />}</i>
@@ -148,7 +149,7 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                 <i className="react-icons" id='next' onClick={() => handleNextPrev(1)}><IoPlaySkipForward /></i>
 
                 {/* volume */}
-                <i className="react-icons" onClick={() => setShowVolume(prev => !prev)}><FaVolumeUp /></i>
+                <i id='volume' className="react-icons" onClick={() => setShowVolume(prev => !prev)}><FaVolumeUp /></i>
 
                 <div className={`volume ${showVolume ? 'show' : ''}`}>
                     <i className="react-icons" onClick={() => setVolume(v => v > 0 ? 0 : 100)}>{volume === 0 ? <MdVolumeOff /> : <FaVolumeUp />}</i>

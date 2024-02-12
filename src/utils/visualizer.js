@@ -27,9 +27,9 @@ export const visualizer = (audioElement, canvas, play) => {
         for (let i = 0; i < bufferLength; i++) {
             let v = datArray[i] / 10;
             ctx.arc(WIDTH / 2, HEIGHT / 2, Math.abs(100 + v), 0, 2 * Math.PI);
-            ctx.shadowColor = '#971522';
+            ctx.shadowColor = 'whitesmoke';
             ctx.shadowBlur = 3;
-            ctx.strokeStyle = 'white';
+            ctx.strokeStyle = '#a57522';
             ctx.stroke();
         }
     }
