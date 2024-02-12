@@ -131,7 +131,7 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
             </div>
             <div className="progress">
                 <input type="range" min={0} max={duration} value={currentTime} onChange={e => changeCurrentTime(e)} style={{
-                    background: `linear-gradient(to right, #3264fe ${currentTime / duration * 100}%, #e5e5e5 ${currentTime / duration * 100}%)`
+                    background: `linear-gradient(to right, #971522 ${currentTime / duration * 100}%, #e5e5e5 ${currentTime / duration * 100}%)`
                 }} />
             </div>
             <div className="timer">
@@ -153,7 +153,7 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                 <div className={`volume ${showVolume ? 'show' : ''}`}>
                     <i className="react-icons" onClick={() => setVolume(v => v > 0 ? 0 : 100)}>{volume === 0 ? <MdVolumeOff /> : <FaVolumeUp />}</i>
                     <input type="range" min={0} max={100} value={volume} onChange={e => setVolume(Number(e.target.value))} style={{
-                        background: `linear-gradient(to right, #3264fe ${volume}%, #e5e5e5 ${volume}%)`
+                        background: `linear-gradient(to right, #971522 ${volume}%, #e5e5e5 ${volume}%)`
                     }} />
                     <span>{volume}</span>
                 </div>

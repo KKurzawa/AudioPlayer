@@ -59,7 +59,7 @@ bottom: 0;
 }
 
 .list ul li:hover{
-    background: palegoldenrod;
+    background: hsla(38, 66%, 39%, 0.507);
 }
 
 .list ul li .row p{
@@ -72,5 +72,5 @@ bottom: 0;
 }
 
 .list .playing{
-    background-color: papayawhip;
+    background-color: hsla(354, 76%, 34%, 0.945);
 }
