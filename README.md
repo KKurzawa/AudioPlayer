@@ -16,8 +16,6 @@ Upon loading the user is presented with the first audio track/artist/album cover
 
 ![screenshot3](https://github.com/KKurzawa/AudioPlayer/blob/main/src/assets/images/Screenshot3.png)
 
-![screenshot4](https://github.com/KKurzawa/React-Portfolio/blob/main/public/Screenshot3.png)
-
 [Github Repository](https://github.com/KKurzawa/AudioPlayer)
 
 [Deployed Site](https://audio-player-ten-eta.vercel.app/)
