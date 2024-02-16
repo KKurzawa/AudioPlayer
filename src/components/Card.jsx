@@ -23,15 +23,15 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
     const audioRef = useRef();
     const canvasRef = useRef();
 
-    function handleLoadStart(e) {
-        const src = e.nativeEvent.srcElement.src;
-        const audio = new Audio(src);
-        audio.onloadedmetadata = function () {
-            if (audio.readyState > 0) {
-                setDuration(audio.duration)
-            }
-        }
-        // setDuration(audioRef.current.duration)
+    function handleLoadStart() {
+        // const src = e.nativeEvent.srcElement.src;
+        // const audio = new Audio(src);
+        // audio.onloadedmetadata = function () {
+        //     if (audio.readyState > 0) {
+        //         setDuration(audio.duration)
+        //     }
+        // }
+        setDuration(audioRef.current.duration)
         if (play) { audioRef.current.play() }
     }
 
@@ -160,7 +160,7 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                 </div>
             </div>
             <audio src={Musics[musicNumber].src} controls ref={audioRef}
-                onCanPlayThrough={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
+                onCanPlay={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
         </div>
     )
 }
