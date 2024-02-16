@@ -33,6 +33,7 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
         // }
         setDuration(audioRef.current.duration)
         if (play) { audioRef.current.play() }
+        console.log('')
     }
 
     function handlePlayingAudio() {
@@ -44,6 +45,7 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
             audioRef.current.play();
             setPlay(true)
         }
+        console.log('handlePlayingAudio')
     }
 
     function handleTimeUpdate() {
@@ -160,7 +162,7 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                 </div>
             </div>
             <audio src={Musics[musicNumber].src} controls ref={audioRef}
-                onCanPlay={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
+                onLoadedData={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
         </div>
     )
 }
