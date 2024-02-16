@@ -1,6 +1,6 @@
 import './index.css'
 import { IoHome } from "react-icons/io5";
-import Card from './components/card';
+import Card from './components/Card';
 import { useState } from 'react';
 import List from './components/list';
 

@@ -12,7 +12,7 @@ import { FaPause } from "react-icons/fa";
 import { MdVolumeOff } from "react-icons/md";
 import { visualizer } from "../utils/visualizer.js";
 
-const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
+const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
     const [duration, setDuration] = useState(1);
     const [currentTime, setCurrentTime] = useState(0);
     const [play, setPlay] = useState(false);
@@ -165,4 +165,4 @@ const card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
     )
 }
 
-export default card
+export default Card
