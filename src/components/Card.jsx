@@ -159,8 +159,8 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                     <span>{volume}</span>
                 </div>
             </div>
-            <audio src={Musics[musicNumber].src} hidden ref={audioRef}
-                onLoadedData={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
+            <audio src={Musics[musicNumber].src} controls ref={audioRef}
+                onCanPlayThrough={handleLoadStart} onTimeUpdate={handleTimeUpdate} onEnded={EndedAudio} />
         </div>
     )
 }
