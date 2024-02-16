@@ -2,7 +2,7 @@ import './index.css'
 import { IoHome } from "react-icons/io5";
 import Card from './components/Card';
 import { useState } from 'react';
-import List from './components/list';
+import List from './components/List';
 
 const App = () => {
   const [musicNumber, setMusicNumber] = useState(0);
