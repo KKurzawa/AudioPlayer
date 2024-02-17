@@ -65,6 +65,7 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
                 return value + n > Musics.length - 1 ? 0 : value + n;
             return value + n < 0 ? Musics.length - 1 : value + n;
         })
+        console.log('handleNextPrev')
     }
 
     useEffect(() => {
@@ -168,3 +169,4 @@ const Card = ({ props: { musicNumber, setMusicNumber, setOpen } }) => {
 }
 
 export default Card
+
