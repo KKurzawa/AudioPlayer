@@ -1,12 +1,13 @@
 import zapToro from '../images/ZapToro.jpeg';
 import visionQuest from '../images/VisionQuest.jpeg';
 import sly from '../images/Sly.jpg';
-import blueEyesForPalestine from '../musics/BlueEyesForPalestine.mp3';
-import funhouseStrut from '../musics/FunhouseStrut.mp3';
-import kutiKuti from '../musics/KutiKuti.mp3';
-import number23 from '../musics/Number23.mp3';
-import pertoDoSol from '../musics/PertoDoSol.mp3';
-import zaptista from '../musics/Zaptista.mp3';
+
+const blueEyesForPalestine = '/musics/BlueEyesForPalestine.mp3';
+const funhouseStrut = '/musics/FunhouseStrut.mp3';
+const kutiKuti = '/musics/KutiKuti.mp3';
+const number23 = '/musics/Number23.mp3';
+const pertoDoSol = '/musics/PertoDoSol.mp3';
+const zaptista = '/musics/Zaptista.mp3';
 
 const Musics = [
     {
